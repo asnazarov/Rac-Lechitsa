@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <myHeader></myHeader>
+    <!-- <myHeader></myHeader> -->
     <logo></logo>
     <h1 class="title">Hello</h1>
     <input type="text" name v-model="text" />

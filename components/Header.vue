@@ -16,6 +16,8 @@ import Menu from '@/components/Menu'
 
 <style lang="scss" scoped>
 .header {
+max-width: 1440px;
+margin: 0 auto;
 min-height: 76px;
 border: 1px solid green;
 display: flex;

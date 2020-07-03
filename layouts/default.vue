@@ -1,8 +1,19 @@
 <template>
   <div>
+    <myHeader></myHeader>
     <Nuxt />
+
   </div>
 </template>
+
+<script>
+import Header from '@/components/Header'
+export default {
+   components: {
+    'myHeader': Header,
+  },
+}
+</script>
 
 <style>
 html {
