@@ -1,6 +1,7 @@
 <template>
   <div class="container">
-    <!-- <myHeader></myHeader> -->
+    <myCover></myCover>
+    <rootSection></rootSection>
     <logo></logo>
     <h1 class="title">Hello</h1>
     <input type="text" name v-model="text" />
@@ -10,7 +11,8 @@
 </template>
 
 <script>
-import Header from '@/components/Header'
+import Cover from '@/components/Cover'
+import RootSection from '@/components/RootSection'
 import Logo from '@/components/Logo';
 export default {
   data() {
@@ -20,14 +22,15 @@ export default {
   },
   components: {
     logo: Logo,
-    myHeader: Header,
+    myCover: Cover,
+    'rootSection': RootSection,
   },
 };
 </script>
 
 <style>
 .container {
-  max-width: 1440px;
+  /* max-width: 1440px; */
   margin: 0 auto;
   min-height: 100vh;
 }
