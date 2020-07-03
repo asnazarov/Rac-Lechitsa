@@ -1,5 +1,6 @@
 <template>
   <div class="container">
+    <myHeader></myHeader>
     <logo></logo>
     <h1 class="title">Hello</h1>
     <input type="text" name v-model="text" />
@@ -9,6 +10,7 @@
 </template>
 
 <script>
+import Header from '@/components/Header'
 import Logo from '@/components/Logo';
 export default {
   data() {
@@ -18,27 +20,23 @@ export default {
   },
   components: {
     logo: Logo,
+    myHeader: Header,
   },
 };
 </script>
 
 <style>
 .container {
-  display: flex;
-  flex-direction: column;
+  max-width: 1440px;
   margin: 0 auto;
   min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
 }
 
 .title {
   /* font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
     'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; */
     /* font-family: "Inter", "Source Sans Pro"; */
-    font-family: "Inter", sans-serif; 
+    font-family: "Inter", sans-serif;
   display: block;
   font-weight: 500;
   /* font-weight: 300; */
