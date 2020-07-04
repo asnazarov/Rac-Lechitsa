@@ -3,6 +3,7 @@
     <div class="root-section__item">
       <h2 class="root-section__title">Истории людей, победивших рак, но не свои привычки</h2>
       <p class="root-section__text">Есть вещи, которые не лечатся. Вещи ставшие частью нашего «я», фобии, страхи. Но это точно не рак. Рак лечится. Лучшее доказательство — люди с их историями.</p>
+      <nav-btn></nav-btn>
       <!-- <div class="nav-btn">
         <button class="nav-btn__left"></button>
         <button class="nav-btn__right"></button>
@@ -18,8 +19,11 @@
 </template>
 
 <script>
+import NavBtn from '@/components/ui/NavBtn'
   export default {
-
+    components: {
+      'nav-btn': NavBtn,
+    },
   }
 </script>
 
