@@ -27,10 +27,13 @@ background-position: center;
 
 		&_left {
       background-image: url(../../static/images/ui/left-gray.svg);
+      border-bottom-left-radius: 4px;
+      border-top-left-radius: 4px;
 		}
-
 		&_right {
       background-image: url(../../static/images/ui/right-gray.svg);
+      border-bottom-right-radius: 4px;
+      border-top-right-radius: 4px;
 		}
 }
 .nav-btn_left:focus {

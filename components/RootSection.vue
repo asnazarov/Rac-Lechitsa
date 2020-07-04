@@ -11,7 +11,9 @@
     </div>
     <div class="root-section__video">
      <iframe class="root-section__video-item"  src="https://www.youtube.com/embed/Qb4KUktbpzQ" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <figure>
       <figcaption class="root-section__figcaption">Все видео вы можете найте на нашем <a class="root-section__fig-link" target="_blank" href="https://www.youtube.com/channel/UCcxMSzN1R4JfW1vLu3swCaQ/featured">YouTube канале</a>.</figcaption>
+      </figure>
     </div>
 
 
@@ -33,7 +35,7 @@ import NavBtn from '@/components/ui/NavBtn'
   max-width: 1440px;
   margin: 0 auto 0 auto;
   // padding-top: 100px;
-  padding: 100px 60px 0 60px;
+  padding: 100px 60px 70px 60px;
   display: flex;
   justify-content: space-between;
 

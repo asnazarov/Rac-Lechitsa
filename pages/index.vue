@@ -2,6 +2,10 @@
   <div class="container">
     <myCover></myCover>
     <rootSection></rootSection>
+    <callout></callout>
+    <callout>
+      <h2 class="callout__title">РАССКАЗЫВАЙТЕ ВАШИ ИСТОРИИ В ИНСТАГРАМ <span class="callout__hashtag">#ЭТОНЕЛЕЧИТСЯ #РАКЛЕЧИТСЯ</span></h2>
+    </callout>
     <logo></logo>
     <h1 class="title">Hello</h1>
     <input type="text" name v-model="text" />
@@ -13,6 +17,7 @@
 <script>
 import Cover from '@/components/Cover'
 import RootSection from '@/components/RootSection'
+import Callout from '@/components/Callout'
 import Logo from '@/components/Logo';
 export default {
   data() {
@@ -24,6 +29,7 @@ export default {
     logo: Logo,
     myCover: Cover,
     'rootSection': RootSection,
+    'callout': Callout,
   },
 };
 </script>
