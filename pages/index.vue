@@ -1,6 +1,7 @@
 <template>
   <div class="container">
     <myCover></myCover>
+    <rootSection></rootSection>
     <logo></logo>
     <h1 class="title">Hello</h1>
     <input type="text" name v-model="text" />
@@ -11,6 +12,7 @@
 
 <script>
 import Cover from '@/components/Cover'
+import RootSection from '@/components/RootSection'
 import Logo from '@/components/Logo';
 export default {
   data() {
@@ -21,6 +23,7 @@ export default {
   components: {
     logo: Logo,
     myCover: Cover,
+    'rootSection': RootSection,
   },
 };
 </script>
