@@ -6,6 +6,7 @@
     <callout>
       <h2 class="callout__title">РАССКАЗЫВАЙТЕ ВАШИ ИСТОРИИ В ИНСТАГРАМ <span class="callout__hashtag">#ЭТОНЕЛЕЧИТСЯ #РАКЛЕЧИТСЯ</span></h2>
     </callout>
+    <overlay v-if="popupShow"></overlay>
     <logo></logo>
     <h1 class="title">Hello</h1>
     <input type="text" name v-model="text" />
@@ -18,10 +19,12 @@
 import Cover from '@/components/Cover'
 import RootSection from '@/components/RootSection'
 import Callout from '@/components/Callout'
+import Overlay from '@/components/ui/Overlay'
 import Logo from '@/components/Logo';
 export default {
   data() {
     return {
+      popupShow: false,
       text: 'YoYoYo',
     };
   },
@@ -30,6 +33,7 @@ export default {
     myCover: Cover,
     'rootSection': RootSection,
     'callout': Callout,
+    'overlay': Overlay,
   },
 };
 </script>
