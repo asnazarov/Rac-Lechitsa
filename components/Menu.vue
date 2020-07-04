@@ -3,14 +3,18 @@
     <ul class="menu">
       <li><nuxt-link class="menu__link" to="/">Главная</nuxt-link></li>
       <li><nuxt-link class="menu__link" to="/stories">Истории</nuxt-link></li>
-      <li><nuxt-link class="menu__link menu__link_anotherColor" to="/">Рассказать историю</nuxt-link></li>
+      <li><tell-history class="menu__link" :theme="'dark'">Рассказать историю</tell-history></li>
+
     </ul>
   </nav>
 </template>
 
 <script>
+import TellHistory from '@/components/ui/TellHistory'
   export default {
-
+    components: {
+      'tell-history': TellHistory,
+    },
   }
 </script>
 
@@ -19,10 +23,11 @@
 margin: auto 60px auto auto;
 }
 .menu {
-  box-sizing: border-box;
+box-sizing: border-box;
 display: flex;
 flex-wrap: wrap;
 justify-content: space-between;
+align-items: center;
 list-style-type: none;
 padding: 0;
 margin-left: -40px;
@@ -39,9 +44,6 @@ margin-left: -40px;
         background-color: #613A93;
         padding: 12px 20px;
         color: #fff;
-      }
-      &_active {
-        border-bottom: 1px solid #000;
       }
 		}
 }
