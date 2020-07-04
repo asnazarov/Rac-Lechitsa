@@ -1,8 +1,9 @@
 <template>
-  <section class="root-section">
+  <section id="rootSection" class="root-section">
     <div class="root-section__item">
       <h2 class="root-section__title">Истории людей, победивших рак, но не свои привычки</h2>
       <p class="root-section__text">Есть вещи, которые не лечатся. Вещи ставшие частью нашего «я», фобии, страхи. Но это точно не рак. Рак лечится. Лучшее доказательство — люди с их историями.</p>
+      <nav-btn></nav-btn>
       <!-- <div class="nav-btn">
         <button class="nav-btn__left"></button>
         <button class="nav-btn__right"></button>
@@ -10,7 +11,9 @@
     </div>
     <div class="root-section__video">
      <iframe class="root-section__video-item"  src="https://www.youtube.com/embed/Qb4KUktbpzQ" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <figure>
       <figcaption class="root-section__figcaption">Все видео вы можете найте на нашем <a class="root-section__fig-link" target="_blank" href="https://www.youtube.com/channel/UCcxMSzN1R4JfW1vLu3swCaQ/featured">YouTube канале</a>.</figcaption>
+      </figure>
     </div>
 
 
@@ -18,8 +21,11 @@
 </template>
 
 <script>
+import NavBtn from '@/components/ui/NavBtn'
   export default {
-
+    components: {
+      'nav-btn': NavBtn,
+    },
   }
 </script>
 
@@ -27,8 +33,9 @@
 .root-section {
   position: relative;
   max-width: 1440px;
-  margin: 100px auto 0 auto;
-  padding: 0 60px;
+  margin: 0 auto 0 auto;
+  // padding-top: 100px;
+  padding: 100px 60px 70px 60px;
   display: flex;
   justify-content: space-between;
 
