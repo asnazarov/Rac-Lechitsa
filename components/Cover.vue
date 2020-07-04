@@ -1,7 +1,7 @@
 <template>
   <section class="cover">
     <h2 class="cover__title">#РАКЛЕЧИТСЯ</h2>
-    <nuxt-link class="cover__link" to="/"><img src="../static/images/cover/cover__link.png" alt=""></nuxt-link>
+    <a class="cover__link" href="#rootSection"><img src="../static/images/cover/cover__link.png" alt=""></a>
   </section>
 </template>
 
