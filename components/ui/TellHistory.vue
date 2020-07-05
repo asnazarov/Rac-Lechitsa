@@ -1,5 +1,5 @@
 <template>
-  <button :class="['tellHistory', `tellHistory_theme_${theme}`]">
+  <button :class="['tellHistory', `tellHistory_theme_${theme}`]" @click="$emit('clickHistory')">
     <slot></slot>
   </button>
 </template>
@@ -15,6 +15,7 @@
   border: none;
   box-sizing: border-box;
   border-radius: 4px;
+  color: #fff;
   &_theme_dark {
     background-color: #613A93;
     padding: 12px 20px;

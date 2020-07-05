@@ -1,7 +1,7 @@
 <template>
   <header class="header">
     <h1 class="header__title">Проект Благотворительного Фонда Константина Хабенского</h1>
-    <myMe></myMe>
+    <myMe @clickHistory="$emit('clickHistory')"></myMe>
   </header>
 </template>
 
